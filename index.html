@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tic-Tac-Toe</h1>
+    <section id="container-game">
+        <div class="row">
+            <div class="square" id="1" onclick="getSquare(this.id)">-</div>
+            <div class="square" id="2" onclick="getSquare(this.id)">-</div>
+            <div class="square" id="3" onclick="getSquare(this.id)">-</div>
+        </div>
+        <div class="row">
+            <div class="square" id="4" onclick="getSquare(this.id)">-</div>
+            <div class="square" id="5" onclick="getSquare(this.id)">-</div>
+            <div class="square" id="6" onclick="getSquare(this.id)">-</div>
+        </div>
+        <div class="row">
+            <div class="square" id="7" onclick="getSquare(this.id)">-</div>
+            <div class="square" id="8" onclick="getSquare(this.id)">-</div>
+            <div class="square" id="9" onclick="getSquare(this.id)">-</div>
+        </div>
+    </section>
+    <section id="info-game">
+        <div>
+            <label for="">
+                Player:
+            </label>
+            <label for="" id="player-select"></label>
+        </div>
+        <div>
+            <label for="">
+                Winner:
+            </label>
+            <label for="" id="winner-select"></label>
+        </div>
+        <button onclick="restart()">
+            Restart
+        </button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
